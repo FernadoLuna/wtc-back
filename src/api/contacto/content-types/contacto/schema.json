@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contactos",
+  "info": {
+    "singularName": "contacto",
+    "pluralName": "contactos",
+    "displayName": "Contacto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "extension": {
+      "type": "integer",
+      "required": true
+    },
+    "correo": {
+      "type": "email",
+      "required": true
+    },
+    "departamento": {
+      "type": "string",
+      "required": true
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reubicaciones",
+  "info": {
+    "singularName": "reubicacion",
+    "pluralName": "reubicaciones",
+    "displayName": "reubicaciones",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "formato_entrada": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::formato-entrada.formato-entrada",
+      "mappedBy": "reubicacione"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "nueva_ubicacion": {
+      "type": "string"
+    }
+  }
+}

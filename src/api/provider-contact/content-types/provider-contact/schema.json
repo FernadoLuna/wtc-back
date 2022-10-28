@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provider_contacts",
+  "info": {
+    "singularName": "provider-contact",
+    "pluralName": "provider-contacts",
+    "displayName": "provider_contacts"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "string",
+      "required": true
+    },
+    "extension": {
+      "type": "string",
+      "required": true
+    },
+    "correo": {
+      "type": "email"
+    },
+    "departamento": {
+      "type": "string",
+      "required": true
+    },
+    "provedore": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provedor.provedor"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "almacenes",
+  "info": {
+    "singularName": "almacen",
+    "pluralName": "almacenes",
+    "displayName": "Almacenes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "string",
+      "required": true
+    },
+    "colonia": {
+      "type": "string"
+    },
+    "calle": {
+      "type": "string"
+    },
+    "codigo_postal": {
+      "type": "string",
+      "required": true
+    },
+    "num_ext": {
+      "type": "string"
+    }
+  }
+}

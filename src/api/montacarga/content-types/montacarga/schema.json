@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "montacargas",
+  "info": {
+    "singularName": "montacarga",
+    "pluralName": "montacargas",
+    "displayName": "Montacargas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "epc": {
+      "type": "string"
+    },
+    "imagen": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

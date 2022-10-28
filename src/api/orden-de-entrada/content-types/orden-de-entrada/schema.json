@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordenes_de_entradas",
+  "info": {
+    "singularName": "orden-de-entrada",
+    "pluralName": "ordenes-de-entradas",
+    "displayName": "Ordenes de entrada",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "folio": {
+      "type": "string"
+    },
+    "fecha_programada": {
+      "type": "date",
+      "required": true
+    },
+    "activo_fijo": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "archivo_orden": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "provedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provedor.provedor"
+    },
+    "total": {
+      "type": "string"
+    },
+    "total_real": {
+      "type": "decimal"
+    },
+    "products": {
+      "type": "json"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    }
+  }
+}

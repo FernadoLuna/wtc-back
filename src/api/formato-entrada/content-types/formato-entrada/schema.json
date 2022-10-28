@@ -1,0 +1,155 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formato_entradas",
+  "info": {
+    "singularName": "formato-entrada",
+    "pluralName": "formato-entradas",
+    "displayName": "Formato de entrada",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fecha_registro": {
+      "type": "date",
+      "required": true
+    },
+    "hora_registro": {
+      "type": "time",
+      "required": true
+    },
+    "bol": {
+      "type": "string",
+      "required": true
+    },
+    "linea_transportista": {
+      "type": "string",
+      "required": true
+    },
+    "nombre_chofer": {
+      "type": "string",
+      "required": true
+    },
+    "tipo_transporte": {
+      "type": "string",
+      "required": true
+    },
+    "placas": {
+      "type": "string",
+      "required": true
+    },
+    "numero_caja": {
+      "type": "string",
+      "required": true
+    },
+    "numero_tractor": {
+      "type": "string",
+      "required": true
+    },
+    "carta_porte": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_modulacion": {
+      "type": "date"
+    },
+    "hora_modulacion": {
+      "type": "time"
+    },
+    "modulo_operacion": {
+      "type": "string"
+    },
+    "pedimento_chronos": {
+      "type": "string",
+      "required": true
+    },
+    "pedimento_cliente": {
+      "type": "string",
+      "required": true
+    },
+    "aviso_electrico": {
+      "type": "string",
+      "required": true
+    },
+    "folio": {
+      "type": "string",
+      "required": false
+    },
+    "provedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provedor.provedor"
+    },
+    "pallet": {
+      "type": "string",
+      "default": "0"
+    },
+    "carton": {
+      "type": "string",
+      "default": "0"
+    },
+    "remesa": {
+      "type": "string"
+    },
+    "fecha_fin": {
+      "type": "date"
+    },
+    "fecha_inicio": {
+      "type": "date",
+      "required": true
+    },
+    "numero_sello": {
+      "type": "string"
+    },
+    "tipo_operacion": {
+      "type": "string"
+    },
+    "maniobras": {
+      "type": "string"
+    },
+    "servicios_adicionales": {
+      "type": "string"
+    },
+    "tipo_carga": {
+      "type": "string"
+    },
+    "comentarios": {
+      "type": "string"
+    },
+    "patente": {
+      "type": "string"
+    },
+    "portal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::portal.portal"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "orden_compra": {
+      "type": "string"
+    },
+    "archivo_entrada": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "reubicacione": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::reubicacion.reubicacion",
+      "inversedBy": "formato_entrada"
+    },
+    "ubicacion_inicial": {
+      "type": "string"
+    }
+  }
+}

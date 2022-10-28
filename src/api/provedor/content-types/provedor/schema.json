@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "provedores",
+  "info": {
+    "singularName": "provedor",
+    "pluralName": "provedores",
+    "displayName": "Provedores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "razon_social": {
+      "type": "string",
+      "required": true
+    },
+    "pais": {
+      "type": "string",
+      "required": true
+    },
+    "estado": {
+      "type": "string",
+      "required": true
+    },
+    "colonia": {
+      "type": "string",
+      "required": true
+    },
+    "calle": {
+      "type": "string",
+      "required": true
+    },
+    "codigo_postal": {
+      "type": "string",
+      "required": true
+    },
+    "num_ext": {
+      "type": "string",
+      "required": true
+    },
+    "num_int": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "nombre_contacto": {
+      "type": "string",
+      "required": true
+    },
+    "rfc": {
+      "type": "string"
+    },
+    "tipo_provedor": {
+      "type": "string"
+    },
+    "immex": {
+      "type": "string"
+    },
+    "rfe": {
+      "type": "string",
+      "required": true
+    },
+    "submanufactura": {
+      "type": "boolean"
+    }
+  }
+}

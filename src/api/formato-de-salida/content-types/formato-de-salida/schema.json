@@ -1,0 +1,143 @@
+{
+  "kind": "collectionType",
+  "collectionName": "formato_de_salidas",
+  "info": {
+    "singularName": "formato-de-salida",
+    "pluralName": "formato-de-salidas",
+    "displayName": "Formato de salida",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "folio": {
+      "type": "string"
+    },
+    "fecha_registro": {
+      "type": "date"
+    },
+    "hora_registro": {
+      "type": "time"
+    },
+    "bol": {
+      "type": "string"
+    },
+    "linea_transportista": {
+      "type": "string"
+    },
+    "nombre_chofer": {
+      "type": "string"
+    },
+    "tipo_transporte": {
+      "type": "string"
+    },
+    "placas": {
+      "type": "string"
+    },
+    "numero_caja": {
+      "type": "string"
+    },
+    "numero_tractor": {
+      "type": "string"
+    },
+    "carta_porte": {
+      "type": "string"
+    },
+    "fecha_modulacion": {
+      "type": "date"
+    },
+    "hora_modulacion": {
+      "type": "time"
+    },
+    "modulo_operacion": {
+      "type": "string"
+    },
+    "pedimento_chronos": {
+      "type": "string"
+    },
+    "pedimento_cliente": {
+      "type": "string"
+    },
+    "aviso_electrico": {
+      "type": "string"
+    },
+    "pallet": {
+      "type": "string"
+    },
+    "carton": {
+      "type": "string"
+    },
+    "remesa": {
+      "type": "string"
+    },
+    "fecha_fin": {
+      "type": "date"
+    },
+    "fecha_inicio": {
+      "type": "date"
+    },
+    "numero_sello": {
+      "type": "string"
+    },
+    "tipo_operacion": {
+      "type": "string"
+    },
+    "maniobras": {
+      "type": "string"
+    },
+    "servicios_adicionales": {
+      "type": "string"
+    },
+    "tipo_carga": {
+      "type": "string"
+    },
+    "comentarios": {
+      "type": "string"
+    },
+    "patente": {
+      "type": "string"
+    },
+    "portal": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::portal.portal"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "orden_venta": {
+      "type": "string"
+    },
+    "archivo_salida": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente"
+    },
+    "factura": {
+      "type": "string"
+    },
+    "provedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provedor.provedor"
+    },
+    "guia": {
+      "type": "string"
+    }
+  }
+}

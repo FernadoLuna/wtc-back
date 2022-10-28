@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos",
+  "info": {
+    "singularName": "producto",
+    "pluralName": "productos",
+    "displayName": "productos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sku": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "politica_almacen": {
+      "type": "string",
+      "required": true
+    },
+    "costo": {
+      "type": "decimal"
+    },
+    "fraccion_alancelaria": {
+      "type": "string",
+      "required": true
+    },
+    "umc": {
+      "type": "string",
+      "required": true
+    },
+    "umt": {
+      "type": "string",
+      "required": true
+    },
+    "tipo_material": {
+      "type": "string"
+    },
+    "provedor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::provedor.provedor"
+    },
+    "categoria": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::categoria.categoria"
+    },
+    "activo_fijo": {
+      "type": "boolean",
+      "required": true
+    },
+    "cantidad": {
+      "type": "integer",
+      "default": 0
+    },
+    "marca": {
+      "type": "string",
+      "required": false
+    },
+    "modelo": {
+      "type": "string",
+      "required": false
+    },
+    "serie": {
+      "type": "string"
+    }
+  }
+}

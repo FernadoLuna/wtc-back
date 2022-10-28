@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordenes_de_salida",
+  "info": {
+    "singularName": "orden-salida",
+    "pluralName": "ordenes-de-salida",
+    "displayName": "Ordenes de salida"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "folio": {
+      "type": "string"
+    },
+    "fecha_programada": {
+      "type": "date"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "productos": {
+      "type": "json"
+    }
+  }
+}

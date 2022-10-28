@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tiendas",
+  "info": {
+    "singularName": "tienda",
+    "pluralName": "tiendas",
+    "displayName": "Tiendas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "token": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string"
+    }
+  }
+}
