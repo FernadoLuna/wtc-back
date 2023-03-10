@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "tipos_entradas",
+  "info": {
+    "singularName": "tipos-entrada",
+    "pluralName": "tipos-entradas",
+    "displayName": "Tipos entradas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "opciones": {
+      "type": "text"
+    }
+  }
+}

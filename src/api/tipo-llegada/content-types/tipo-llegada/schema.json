@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "tipo_llegadas",
+  "info": {
+    "singularName": "tipo-llegada",
+    "pluralName": "tipo-llegadas",
+    "displayName": "Tipo llegadas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "opciones": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testsalidas",
+  "info": {
+    "singularName": "testsalida",
+    "pluralName": "testsalidas",
+    "displayName": "testsalidas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "testprueba": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::testprueba.testprueba"
+    },
+    "salidas_parciales": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testsalidaparcial.testsalidaparcial"
+    },
+    "tipo_salida": {
+      "type": "string"
+    },
+    "identificador_salida": {
+      "type": "string"
+    },
+    "responsable": {
+      "type": "string"
+    }
+  }
+}

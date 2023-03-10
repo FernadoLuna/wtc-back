@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "claves_pedimentos",
+  "info": {
+    "singularName": "claves-pedimento",
+    "pluralName": "claves-pedimentos",
+    "displayName": "claves pedimento",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "opciones": {
+      "type": "text"
+    }
+  }
+}

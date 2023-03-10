@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ubicacionestests",
+  "info": {
+    "singularName": "ubicacionestest",
+    "pluralName": "ubicacionestests",
+    "displayName": "ubicacionestest",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ubicacion": {
+      "type": "string",
+      "required": true
+    },
+    "responsable": {
+      "type": "string",
+      "required": true
+    },
+    "testprueba": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::testprueba.testprueba"
+    }
+  }
+}

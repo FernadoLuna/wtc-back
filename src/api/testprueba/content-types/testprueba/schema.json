@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testpruebas",
+  "info": {
+    "singularName": "testprueba",
+    "pluralName": "testpruebas",
+    "displayName": "RecintoEntradas",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pedimento": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "bultos": {
+      "type": "string"
+    },
+    "tipo_llegada": {
+      "type": "string"
+    },
+    "clave_pedimento": {
+      "type": "string"
+    },
+    "cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente"
+    },
+    "bodega": {
+      "type": "string"
+    },
+    "linea_transportista": {
+      "type": "string"
+    },
+    "adjuntos": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "bl": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "identificador_llegada": {
+      "type": "string"
+    },
+    "nombre_receptor": {
+      "type": "string",
+      "required": false
+    },
+    "folio": {
+      "type": "string",
+      "required": true
+    },
+    "nombre_entregador": {
+      "type": "string"
+    },
+    "bultos_stock": {
+      "type": "integer"
+    },
+    "candados": {
+      "type": "json"
+    },
+    "acuerdo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
